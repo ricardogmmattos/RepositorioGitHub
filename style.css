@@ -1,0 +1,498 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#image1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: black;
+  text-decoration: dashed;
+  /* font-family: Arial, Helvetica, sans-serif;*/
+  align-items: center;
+  justify-content: center;
+}
+
+a:hover {
+  color: black;
+  text-shadow: rgba(0, 0, 0, 0.05);
+  /*Como fazer para botar um BOLD aqui, ou fazer a letra crescer? é com o transform? */
+  /*background: rgba(0, 0, 0, 0.05);*/
+}
+
+#logo {
+  margin-left: 50 px;
+}
+
+
+
+#header {
+  box-sizing: border-box;
+  height: 80px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #e7e7e7;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  gap: 2rem;
+}
+
+#menu a {
+  display: block;
+  align-items: center;
+  padding: 0.0rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+.redes {
+  position: fixed;
+  align-items: center;
+  background-color: #dc2f55;
+}
+
+.area1 {
+  padding-bottom: 50px;
+  box-shadow: 5px 5px 10px rgba(26, 25, 25, 0.473);
+  background-image: url(./images/Estúdio-39-Centralizado-1920x700jpg.jpg), radial-gradient(#0F0, #000), repeating-linear-gradient(transparent 0, rgba(0, 0, 0, 0.1) 2.5px, transparent 5px);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+}
+
+.area2 {
+  background-image: url(./images/Linhas-Geométricas-Hipster-Pequenissímas.png);
+  padding-bottom: 50px;
+  box-shadow: 5px 5px 10px rgba(26, 25, 25, 0.473);
+}
+
+.intervalo {
+  padding-bottom: 50px;
+}
+
+#about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#about h4 {
+  color:rgba(0, 0, 0, 0.5);
+  letter-spacing: -0.1px;
+}
+
+#about-itens {
+  display:flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  max-width: 300px;
+  padding: 32px;
+  padding-top: 24px;
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(26, 25, 25, 0.473);
+  border: 2px solid black;
+}
+
+
+
+.card h4 {
+  margin-top: 20px;
+}
+
+
+.card:hover {
+  transform: scale(1.05)
+}
+
+.card1 {
+  background-color: #ffffff;
+  max-width: 350px;
+  padding: 32px;
+  padding-top: 24px;
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(26, 25, 25, 0.473);
+  border: 2px solid black;
+}
+
+
+
+.card1 h4 {
+  margin-top: 20px;
+}
+
+
+.card1:hover {
+  transform: scale(1.05)
+}
+
+
+#parallax {
+  /* The image used */
+  background-image: url(./images/PIXNIO-1734812-5587x3724-1-1024x683.jpg);
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: hsl(49, 94%, 51%);
+  -webkit-text-stroke: 0.5px black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+#imagem1 {
+  background-image: url(./images/PIXNIO-1734812-5587x3724-1-1024x683.jpg);
+  background-color: #cccccc;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+*/
+
+#about2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#about2 h4 {
+  color:rgba(0, 0, 0, 0.5);
+  letter-spacing: -0.1px;
+}
+
+#about2-itens {
+  display:flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.icone {
+  max-width: 325px;
+  margin-bottom: 40px;
+}
+
+.contato {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.65);
+
+}
+
+#grid-pai {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-gap: 0px;
+}
+
+.item1 {
+  grid-row: 1 / 6;
+  grid-column: 1 / 4;
+  padding: 20px;
+  background-color: rgb(255, 0, 0);
+}
+
+.item2 {
+  grid-row: 1 / 11;
+  grid-column: 5 / 12;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgb(72, 255, 0);
+}
+
+#flex-pai {
+  display:flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.flex1 {
+  display: flex;
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgb(255, 0, 0);
+}
+
+.flex2 {
+  display: flex;
+  max-width: 700px;
+  padding: 20px;
+  background-color: rgb(72, 255, 0);
+}
+
+/*
+.grid-formulario > .figura1 {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.formulario {
+  display: grid;
+  grid-column: 3;
+  grid-row: 3;
+  background-color: rgb(20, 168, 77);
+}
+*/
+.formulario-contato {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  width: 500px;
+}
+
+.titulo-contato {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitulo-contato {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.form {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  width: 500px;
+}
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #dc2f55;
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  // outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 80px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .card1 {
+    max-width: 300px;
+  }
+}
+
+li {
+  /*font-family: NexaBold;*/
+}
+
+
+
+@font-face {
+  font-family: NexaBold;
+  src: url(./fonts/Nexa\ Bold.otf)}
+
+@font-face {
+  font-family: VargroundR;
+  src: url(./fonts/VAGRounded\ Lt\ Regular.ttf)} 
